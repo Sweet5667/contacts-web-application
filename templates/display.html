@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact List</title>
+	</head>
+	<body>
+		<h2>Contact Details</h2>
+		<table border=5>
+			<thead>
+				<td>Sno</td>
+				<td>Name</td>
+				<td>Email</td>
+				<td>Number</td>
+			</thead>
+			{% for row in rows %}
+			<tr>
+				<td>{{row["Sno"]}}</td>
+				<td>{{row["name"]}}</td>
+				<td>{{row["email"]}}</td>
+				<td>{{row["number"]}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		<br><br>
+		<a href="/">Go back to homepage</a>
+	</body>
+</html>
+		
+			
+		
