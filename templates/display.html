@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html class="dis_h">
 	<head>
 		<title>Contact List</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"></link>
+		<script src="https://kit.fontawesome.com/09cae0c876.js" crossorigin="anonymous"></script>
+
+
 	</head>
 	<body>
+		<i class="fa-regular fa-address-book conl"></i>
 		<h2>Contact Details</h2>
-		<table border=5>
+		<form class="search" action="/search" method="post">
+			<input type="text"  name="item"></input>
+			<input type="submit" value="search"></input>
+		</form>
+		<div class="display">
+		<table>
 			<thead>
 				<td>Sno</td>
 				<td>Name</td>
@@ -21,8 +31,15 @@
 			</tr>
 			{% endfor %}
 		</table>
+			<div class="dis_a">
+				<i class="fa-solid fa-trash"></i>
+		        <a href="/delete">Delete Contact</a>
+		    	<i class="fa fa-arrow-left back" aria-hidden="true"></i>
+		        <a href="/">Go back to homepage</a>
+			</div>
+		</div>
 		<br><br>
-		<a href="/">Go back to homepage</a>
+			
 	</body>
 </html>
 		
