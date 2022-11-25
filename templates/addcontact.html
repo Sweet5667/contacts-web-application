@@ -2,10 +2,22 @@
 <html>
 	<head>
 		<title>Add contact</title>
+				<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+		<script src="https://kit.fontawesome.com/09cae0c876.js" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
-		<h2>Contact Information</h2>
+		<i class="fa-regular fa-address-book add_cli"></i>
+		<h2 class="add_h">Contact Information</h2>
+		<div class="container">
+			<div class="con_i">
+			<i class="fa-solid fa-circle-user"></i>	
+			<i class="fa-solid fa-envelope"></i>
+			<i class="fa-solid fa-phone"></i>
+			</div>
+
 	<form action="/savedetails" method="POST">
+		<div class="add_contact">
 		<table>
 			<tr>
 				<td>Name</td>
@@ -20,10 +32,15 @@
 				<td><input type="text" name="number"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="submit"></td>
+				<td><input class="add_input" type="submit" value="submit"></td>
 			</tr>
 		</table>
+		</div>
 		</form>
+		</div>
+		<i class="fa fa-arrow-left back" aria-hidden="true"></i>
+		<a href="/" class="add_a">Go Back</a>
+		
 	</body>
 </html>
 	

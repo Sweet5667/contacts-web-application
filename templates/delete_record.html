@@ -2,9 +2,14 @@
 <html>
 	<head>
 		<title>delete record</title>
+				<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+		<script src="https://kit.fontawesome.com/09cae0c876.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<div class="delete_record">
 		<h3>{{msg}}</h3>
+		<i class="fa fa-eye" aria-hidden="true"></i>
 		<a href="/display">View Contacts</a>
+		</div>
 	</body>
 </html>

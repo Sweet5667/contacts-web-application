@@ -2,12 +2,24 @@
 <html>
 	<head>
 		<title>Home</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+		<script src="https://kit.fontawesome.com/09cae0c876.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<h2>Address Book</h2>
-		<a href="/addcontact">Add Contact</a><br><br>
-		<a href="/display">Display contacts</a><br><br>
-		<a href="/delete">Delete contact</a><br><br>
+		<i class="fa-regular fa-address-book home_cli"></i>
+		<h2>CONTACT LIST</h2>
+		<div class="container">
+			
+			<i class="fa-solid fa-circle-user"></i>	
+			<i class="fa fa-eye" aria-hidden="true"></i>	
+			<i class="fa-solid fa-trash"></i>
+			
+        <div class="child">				
+			<a href="/addcontact">Add Contact</a><br><br>
+			<a href="/display">Display contacts</a><br><br>
+			<a href="/delete">Delete contact</a><br><br>
+		</div>
+		</div>
 	</body>
 </html>
 
